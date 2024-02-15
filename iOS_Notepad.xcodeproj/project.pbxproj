@@ -11,6 +11,11 @@
 		F225FEE52B7CC27C00414F98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F225FEE42B7CC27C00414F98 /* ContentView.swift */; };
 		F225FEE72B7CC27E00414F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F225FEE62B7CC27E00414F98 /* Assets.xcassets */; };
 		F225FEEA2B7CC27E00414F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F225FEE92B7CC27E00414F98 /* Preview Assets.xcassets */; };
+		F225FEF12B7CC40C00414F98 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F225FEF02B7CC40C00414F98 /* Persistance.swift */; };
+		F225FEF42B7CC44A00414F98 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F225FEF22B7CC44A00414F98 /* NoteModel.xcdatamodeld */; };
+		F225FEF62B7CC51000414F98 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F225FEF52B7CC51000414F98 /* NoteViewModel.swift */; };
+		F225FEF82B7CC6F700414F98 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F225FEF72B7CC6F700414F98 /* NoteView.swift */; };
+		F225FEFC2B7E595000414F98 /* newNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F225FEFB2B7E595000414F98 /* newNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		F225FEE42B7CC27C00414F98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F225FEE62B7CC27E00414F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F225FEE92B7CC27E00414F98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F225FEF02B7CC40C00414F98 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		F225FEF32B7CC44A00414F98 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
+		F225FEF52B7CC51000414F98 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		F225FEF72B7CC6F700414F98 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		F225FEFB2B7E595000414F98 /* newNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,11 @@
 		F225FEE12B7CC27C00414F98 /* iOS_Notepad */ = {
 			isa = PBXGroup;
 			children = (
+				F225FEFB2B7E595000414F98 /* newNoteView.swift */,
+				F225FEF72B7CC6F700414F98 /* NoteView.swift */,
+				F225FEF52B7CC51000414F98 /* NoteViewModel.swift */,
+				F225FEF22B7CC44A00414F98 /* NoteModel.xcdatamodeld */,
+				F225FEF02B7CC40C00414F98 /* Persistance.swift */,
 				F225FEE22B7CC27C00414F98 /* iOS_NotepadApp.swift */,
 				F225FEE42B7CC27C00414F98 /* ContentView.swift */,
 				F225FEE62B7CC27E00414F98 /* Assets.xcassets */,
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F225FEF62B7CC51000414F98 /* NoteViewModel.swift in Sources */,
 				F225FEE52B7CC27C00414F98 /* ContentView.swift in Sources */,
+				F225FEF82B7CC6F700414F98 /* NoteView.swift in Sources */,
+				F225FEF42B7CC44A00414F98 /* NoteModel.xcdatamodeld in Sources */,
 				F225FEE32B7CC27C00414F98 /* iOS_NotepadApp.swift in Sources */,
+				F225FEFC2B7E595000414F98 /* newNoteView.swift in Sources */,
+				F225FEF12B7CC40C00414F98 /* Persistance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F225FEF22B7CC44A00414F98 /* NoteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F225FEF32B7CC44A00414F98 /* NoteModel.xcdatamodel */,
+			);
+			currentVersion = F225FEF32B7CC44A00414F98 /* NoteModel.xcdatamodel */;
+			path = NoteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F225FED72B7CC27C00414F98 /* Project object */;
 }
